@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    width: 100vw;
+
+    background-color: rgb(46, 86, 107);
+}
+
+.header {
+    display: flex;
+    width: 100vw;
+    height: 3.5em;
+    z-index: 10000;
+    top: 0;
+    background-color: rgb(130, 166, 168);
+    box-shadow: 0.3em;
+    overflow-x: hidden;
+    transition: top 0.5s;
+    position: fixed;
+
+}
+
+.hide {
+    top: -60px;
+}
+
+#menu {
+    height: 100%;
+    width: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(87, 176, 188);
+}
+
+.menuimg {
+    width: 60%;
+}
+
+
+.logodiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3em;
+    margin-left: 2em;
+    height: 100%;
+    margin-right: 2em;
+}
+
+.logop {
+    font-size: 2em;
+}
+
+.menutext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2em;
+}
+
+.menutext>p {
+    font-size: 1.2em;
+}
+
+.logindiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    margin-right: 3em;
+}
+
+.logindiv>button {
+    width: 6em;
+    height: 80%;
+    border-radius: 0.5em;
+    background-color: rgb(57, 93, 81);
+    border: none;
+}
+
+.div1 {
+    display: flex;
+
+}
+
+#menuleft {
+    height: 100vh;
+    width: 11em;
+    background-color: rgb(68, 101, 122);
+
+    display: none;
+    animation: slidein 0.3s forwards;
+    z-index: 100000;
+    position: fixed;
+    left: 0px;
+
+
+
+}
+
+.menuheader {
+    display: flex;
+    background-color: rgb(130, 166, 168);
+    height: 3.5em;
+}
+
+@keyframes slidein {
+    from {
+        transform: translateX(-100%);
+
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
+#menuright {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-grow: 1;
+
+}
+button {
+    width: 5em;
+    height: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+input {
+    width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+    .menutext {
+        display: none;
+    }
+}
+
+.menuitem {
+    width: 9em;
+    height: 3em;
+    margin-top: 3em;
+    background-color: rgb(113, 177, 199);
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    transition: 0.5s;
+}
+
+.menuitem:hover {
+    background-color: rgb(101, 147, 151);
+    width: 9.8em;
+}
+
+
+
+.intro
+
+{
+    width: 100%;
+    height: auto;
+    margin-top: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-self: start;
+    align-items: center;
+    padding-bottom: 2em;
+}
+.input_h1
+{
+    margin-top: 2em;
+}
+.check_box
+{
+   display: grid;
+   gap: 20px;
+justify-content: center;
+    max-width: 70%;
+    min-width: 70%;
+   
+    background-color: rgb(119, 133, 128);
+    border-radius: 2em;
+    padding: 1em;
+    margin-top: 2em;
+}
+.check{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check_item
+{
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    width: 8em;
+    height: 5em;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+.check_item:hover
+{
+    
+    width: 8.5em;
+}
+@media (min-width: 1080px) {
+    .check_box {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+/* 当屏幕宽度小于 1080px 时，每行有三个按钮 */
+@media (max-width: 1080px) {
+    .check_box {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 610px) {
+
+    .check_box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 370px) {
+
+    .check_box {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.check>button>p{
+    font-size: 16px;
+}
+#submitBtn
+{
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(57, 93, 81);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1em;
+    width: 8em;
+    height: 5em;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+#submitBtn:hover
+{
+width: 8.5em;
+}

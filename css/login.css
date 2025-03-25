@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(46, 86, 107);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.div1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+    width: 20em;
+    height: 30em;
+    background-color: rgb(120, 150, 163);
+
+}
+
+.img1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    width: 5em;
+
+
+}
+
+.text1 {
+    background-color: rgb(167, 187, 205);
+    border: white;
+    height: 2em;
+    padding: 0.2em;
+    margin-bottom: 3em;
+
+}
+
+.text1:checked {
+    background-color: rgb(220, 178, 126);
+    border: 1px solid rgb(233, 195, 137);
+
+}
+
+.textinput {
+    margin-top: 3em;
+
+}
+
+.h3in {
+    display: flex;
+    justify-content: center;
+}
+
+.buttonin {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    width: 5em;
+    height: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+input {
+    width: 100%;
+}
+
+#regis {
+    background-color: rgb(148, 127, 71);
+    border: none;
+    color: white;
+}
+
+#regis a {
+    color: white;
+    text-decoration: none;
+}
+
+#login {
+    background-color: rgb(70, 165, 119);
+    color: white;
+    border: none;
+}
+
+#login a {
+    color: white;
+    text-decoration: none;
+}

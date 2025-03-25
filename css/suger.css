@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    width: 100vw;
+
+    background-color: rgb(46, 86, 107);
+}
+
+.header {
+    display: flex;
+    width: 100vw;
+    height: 3.5em;
+    z-index: 10000;
+    top: 0;
+    background-color: rgb(130, 166, 168);
+    box-shadow: 0.3em;
+    overflow-x: hidden;
+    transition: top 0.5s;
+    position: fixed;
+
+}
+
+.hide {
+    top: -60px;
+}
+
+#menu {
+    height: 100%;
+    width: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(87, 176, 188);
+
+}
+
+.menuimg {
+    width: 60%;
+}
+
+
+.logodiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 3em;
+    margin-left: 2em;
+    height: 100%;
+    margin-right: 2em;
+}
+
+.logop {
+    font-size: 2em;
+}
+
+.menutext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2em;
+}
+
+.menutext>p {
+    font-size: 1.2em;
+}
+
+.logindiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-grow: 1;
+    margin-right: 3em;
+}
+
+.logindiv>button {
+    width: 6em;
+    height: 80%;
+    border-radius: 0.5em;
+    background-color: rgb(57, 93, 81);
+    border: none;
+}
+
+.div1 {
+    display: flex;
+
+}
+
+#menuleft {
+    height: 100vh;
+    width: 11em;
+    background-color: rgb(68, 101, 122);
+
+    display: none;
+    animation: slidein 0.3s forwards;
+    z-index: 100000;
+    position: fixed;
+    left: 0px;
+
+
+
+}
+
+.menuheader {
+    display: flex;
+    background-color: rgb(130, 166, 168);
+    height: 3.5em;
+}
+
+@keyframes slidein {
+    from {
+        transform: translateX(-100%);
+
+    }
+
+    to {
+        transform: translateX(0%);
+    }
+}
+
+
+#menuright {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-grow: 1;
+
+}
+
+
+button {
+    width: 5em;
+    height: 3em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+input {
+    width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+    .menutext {
+        display: none;
+    }
+}
+
+.input_str {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 2em;
+    width: 60%;
+}
+
+.input_str>input {
+
+    width: 70%;
+    margin-left: 1em;
+
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    border: none;
+    font-size: 20px;
+
+}
+
+.menuitem {
+    width: 9em;
+    height: 3em;
+    margin-top: 3em;
+    background-color: rgb(113, 177, 199);
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    transition: 0.5s;
+}
+
+.menuitem:hover {
+    background-color: rgb(101, 147, 151);
+    width: 9.8em;
+}
+
+
+.intro {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+
+    animation: slidein 1s forwards;
+    margin-top: 3.5em;
+    align-items: center;
+    padding-top: 2em;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 2em;
+}
+
+.input_h1 {
+    margin-bottom: 2em;
+    color: rgb(125, 160, 161);
+}
+
+.input_suger {
+
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(141, 181, 188);
+    border-radius: 2em;
+    box-shadow: 0.2em 0.2em 0.2em;
+}
+
+.input_suger>button {
+    width: 5em;
+    font-size: 20px;
+    background-color: rgb(234, 177, 138);
+    transition: 1s;
+    margin-bottom: 1em;
+    border: none;
+    border-radius: 1em;
+}
+
+.input_suger>button:hover {
+    background-color: rgb(251, 151, 70);
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+
+}
+
+.webs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 20em;
+    background-color: rgb(168, 222, 203);
+    animation: slidein 1s forwards;
+}
+
+.webs>p {
+    margin-top: 2em;
+    width: 70%;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* 設定顯示 3 行 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
